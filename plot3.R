@@ -15,4 +15,7 @@ png(filename = "plot3.png", width = 480, height = 480, units = "px", bg= "white"
 plot(DateTime, Sub_metering_1, type = "l", col = "dark red", xlab = "", ylab = "Energy sub metering")
 lines(DateTime, Sub_metering_2, col = "black")
 lines(DateTime, Sub_metering_3, col = "purple")
+legend("topright", bty = "n",col = c("dark red", "black", " purple "), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+       lwd = 1)
+
 graphics.off()
